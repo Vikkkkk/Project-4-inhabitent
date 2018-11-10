@@ -225,6 +225,44 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Merriweather-bold';
+  src: url("../../fonts/Merriweather-Bold.woff2") format("woff2"), url("../../fonts/Merriweather-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather-boldItalic';
+  src: url("../../fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("../../fonts/Merriweather-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather-lightItalic';
+  src: url("../../fonts/Merriweather-LightItalic.woff2") format("woff2"), url("../../fonts/Merriweather-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather-light';
+  src: url("../../fonts/Merriweather-Light.woff2") format("woff2"), url("../../fonts/Merriweather-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: '.';
+  src: url("../../fonts/novecento.eot");
+  src: url("../../fonts/novecento.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecento.woff2") format("woff2"), url("../../fonts/novecento.woff") format("woff"), url("../../fonts/novecento.ttf") format("truetype"), url("../../fonts/novecento.svg#.") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'novecento-bold';
+  src: url("../../fonts/novecento-bold.eot");
+  src: url("../../fonts/novecento-bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecento-bold.woff2") format("woff2"), url("../../fonts/novecento-bold.woff") format("woff"), url("../../fonts/novecento-bold.ttf") format("truetype"), url("../../fonts/novecento-bold.svg#.") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -670,3 +708,47 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-footer {
+  background-image: url("../../images/dark-wood.png"); }
+
+.footer-blocks {
+  font-family: 'Merriweather-light';
+  width: 1120px;
+  margin: 0 auto;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .footer-blocks h3 {
+    color: #d99054;
+    font-family: 'novecento-bold'; }
+  .footer-blocks a {
+    color: white; }
+  .footer-blocks .contact-info {
+    padding-right: 1.5rem;
+    width: 25%; }
+    .footer-blocks .contact-info span {
+      font-size: 1.25rem;
+      margin-right: 0.5rem; }
+  .footer-blocks .business-hours {
+    padding-right: 1.5rem;
+    width: 25%; }
+    .footer-blocks .business-hours span {
+      font-weight: 700; }
+  .footer-blocks .blocks {
+    margin: 3rem 0; }
+  .footer-blocks .footer-logo {
+    width: 50%;
+    text-align: right; }
+    .footer-blocks .footer-logo img {
+      max-width: 50%; }
+
+.site-info {
+  color: white;
+  text-align: center; }

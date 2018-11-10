@@ -1,0 +1,52 @@
+.site-footer {
+  background-image: url('../../images/dark-wood.png');
+}
+
+.footer-blocks {
+  font-family: 'Merriweather-light';
+  width: 1120px;
+  margin: 0 auto;
+
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  h3 {
+    color: #d99054;
+    font-family: 'novecento-bold';
+  }
+  a {
+    color: white;
+  }
+
+  .contact-info {
+    padding-right: 1.5rem;
+    width: 25%;
+    span {
+      font-size: 1.25rem;
+      margin-right: 0.5rem;
+    }
+  }
+  .business-hours {
+    padding-right: 1.5rem;
+    width: 25%;
+    span {
+      font-weight: 700;
+    }
+  }
+  .blocks {
+    margin: 3rem 0;
+  }
+  .footer-logo {
+    width: 50%;
+    text-align: right;
+    img {
+      max-width: 50%;
+    }
+  }
+}
+
+.site-info {
+  color: white;
+  text-align: center;
+}
