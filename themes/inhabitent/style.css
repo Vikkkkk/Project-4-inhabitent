@@ -644,6 +644,33 @@ a {
 .bypostauthor {
   display: block; }
 
+.site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.content-area {
+  width: 73%;
+  padding-right: 5%;
+  border-right: 1px solid #e1e1e1; }
+
+.widget-area {
+  padding-left: 5%;
+  width: 27%; }
+  .widget-area .widget_contact .contact-text {
+    font-family: 'Merriweather-light'; }
+    .widget-area .widget_contact .contact-text a {
+      color: #248a83; }
+  .widget-area .widget_contact .widget_title {
+    font-family: 'novecento-bold'; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -750,5 +777,8 @@ object {
       max-width: 50%; }
 
 .site-info {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1.5rem 0;
   color: white;
   text-align: center; }

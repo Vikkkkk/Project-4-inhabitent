@@ -31,8 +31,6 @@
 					</div>
 				
 				<div class="site-info">
-					
-
 						<p>Copyright © 2019 Inhabitent</p>					
 				</div><!-- .site-info -->
 				</div> <!--end of site-footer -->
