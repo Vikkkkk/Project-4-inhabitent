@@ -1,0 +1,55 @@
+.home {
+  .site-content {
+    width: 100vw;
+    display: flex;
+    .content-area {
+      .site-main {
+        .home-hero {
+          align-items: center;
+          background: linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0.4) 0,
+              rgba(0, 0, 0, 0.4)
+            ),
+            #969696 url(../../images/home-hero.jpg) no-repeat top;
+          background-size: cover, cover;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 100vh;
+        }
+        .frontpage-shop {
+          h2 {
+            font-size: 2.4rem;
+            font-weight: 400;
+            margin-bottom: 3.75rem;
+            text-align: center;
+          }
+          .frontpage-product-blocks {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .frontpage-term {
+              border: 1px solid #e1e1e1;
+              border-top-width: 5px;
+              flex: 0 1 23.5%;
+              max-width: 23.5%;
+              padding: 0.75rem;
+              img {
+                height: 70px;
+                width: 70px;
+              }
+            }
+          }
+        }
+        .front-page-journal {
+          .frontpage-journal-blocks {
+            display: flex;
+            flex-direction: row;
+          }
+        }
+      }
+    }
+  }
+}

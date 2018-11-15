@@ -2,7 +2,6 @@
 /**
  * Custom functions that act independently of the theme templates.
  *
- * @package RED_Starter_Theme
  */
 
 /**
@@ -41,5 +40,41 @@ function inhabitentLoginUrl( $url ) {
     return get_bloginfo( 'url' );
 }
 add_filter( 'login_headerurl', 'inhabitentLoginUrl' );
+
+//adding the custome hero image for the about page below
+
+function inhabitent_dynamic_css(){
+	if(!is_page_template('page-templates/about.php')){
+		return;   
+	}
+	$image = CFS()->get('about_header_image');
+	
+	if(!$image){
+		$hero_css = ".page-template-about .entry-header{
+			background:grey;
+			color:white;
+			height:20vh;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+		}";
+	} else {
+		$hero_css = ".page-template-about .entry-header{		
+			background:linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url({$image});
+			width:100%;
+			color:white;
+			height:100vh;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			background-size:cover;
+		}";
+	}
+
+	wp_add_inline_style('tent-style',$hero_css);
+}
+
+add_action('wp_enqueue_scripts','inhabitent_dynamic_css');
+
 
 //

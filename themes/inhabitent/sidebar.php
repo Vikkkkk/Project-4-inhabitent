@@ -11,9 +11,9 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 
 <div id="secondary" class="widget-area" role="complementary">
-	<!-- <?php dynamic_sidebar( 'sidebar-1' ); ?>   this is from the html editor.. i think?  -->
+	<?php dynamic_sidebar( 'sidebar-1' ); ?>   
 
-	<aside class="widget_contact">
+	<!-- <aside class="widget_contact">
 		<h2 class="widget-title">Contact Info</h2>			
 		<div class="contact_info">
 			<p class="contact-text"><i class="fa fa-phone"></i><span><a href="tel:7784567891">778-456-7891</a></span></p>
@@ -31,6 +31,6 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 
 	<aside class="widget_archive">
 		<h2 class="widget-title">Archives</h2>
-	</aside>
+	</aside> -->
 
 </div><!-- #secondary -->

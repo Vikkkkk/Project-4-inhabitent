@@ -644,22 +644,8 @@ a {
 .bypostauthor {
   display: block; }
 
-.site-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 1120px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.content-area {
-  width: 73%;
-  padding-right: 5%;
-  border-right: 1px solid #e1e1e1; }
+.page-template-about .site-content {
+  width: 100vw; }
 
 .widget-area {
   padding-left: 5%;
@@ -782,3 +768,62 @@ object {
   padding: 1.5rem 0;
   color: white;
   text-align: center; }
+
+.home .site-content {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .home .site-content .content-area .site-main .home-hero {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/home-hero.jpg) no-repeat top;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
+    background-size: cover, cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh; }
+  .home .site-content .content-area .site-main .frontpage-shop h2 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 3.75rem;
+    text-align: center; }
+  .home .site-content .content-area .site-main .frontpage-shop .frontpage-product-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .home .site-content .content-area .site-main .frontpage-shop .frontpage-product-blocks .frontpage-term {
+      border: 1px solid #e1e1e1;
+      border-top-width: 5px;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 23.5%;
+              flex: 0 1 23.5%;
+      max-width: 23.5%;
+      padding: 0.75rem; }
+      .home .site-content .content-area .site-main .frontpage-shop .frontpage-product-blocks .frontpage-term img {
+        height: 70px;
+        width: 70px; }
+  .home .site-content .content-area .site-main .front-page-journal .frontpage-journal-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
