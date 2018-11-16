@@ -644,9 +644,6 @@ a {
 .bypostauthor {
   display: block; }
 
-.page-template-about .site-content {
-  width: 100vw; }
-
 .widget-area {
   padding-left: 5%;
   width: 27%; }
@@ -769,61 +766,143 @@ object {
   color: white;
   text-align: center; }
 
+.home .site-header .main-navigation {
+  position: fixed;
+  color: white; }
+
 .home .site-content {
-  width: 100vw;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .home .site-content .content-area .site-main .home-hero {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/home-hero.jpg) no-repeat top;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
-    background-size: cover, cover;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 100vh; }
-  .home .site-content .content-area .site-main .frontpage-shop h2 {
-    font-size: 2.4rem;
-    font-weight: 400;
-    margin-bottom: 3.75rem;
-    text-align: center; }
-  .home .site-content .content-area .site-main .frontpage-shop .frontpage-product-blocks {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .home .site-content .content-area .site-main .frontpage-shop .frontpage-product-blocks .frontpage-term {
-      border: 1px solid #e1e1e1;
-      border-top-width: 5px;
-      -webkit-box-flex: 0;
-          -ms-flex: 0 1 23.5%;
-              flex: 0 1 23.5%;
-      max-width: 23.5%;
-      padding: 0.75rem; }
-      .home .site-content .content-area .site-main .frontpage-shop .frontpage-product-blocks .frontpage-term img {
-        height: 70px;
-        width: 70px; }
-  .home .site-content .content-area .site-main .front-page-journal .frontpage-journal-blocks {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
+  .home .site-content .content-area {
+    width: 100%; }
+    .home .site-content .content-area .site-main .home-hero {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/home-hero.jpg) no-repeat top;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
+      background-size: cover, cover;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      height: 100vh; }
+    .home .site-content .content-area .site-main .frontpage-shop {
+      width: 1120px;
+      margin-left: auto;
+      margin-right: auto; }
+      .home .site-content .content-area .site-main .frontpage-shop h2 {
+        font-size: 2.4rem;
+        font-weight: 400;
+        margin-bottom: 3.75rem;
+        text-align: center; }
+      .home .site-content .content-area .site-main .frontpage-shop .frontpage-product-blocks {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .home .site-content .content-area .site-main .frontpage-shop .frontpage-product-blocks .frontpage-term {
+          border: 1px solid #e1e1e1;
+          border-top-width: 5px;
+          max-width: 23.5%;
+          padding: 0.75rem;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .home .site-content .content-area .site-main .frontpage-shop .frontpage-product-blocks .frontpage-term .category-link a {
+            background: #248a83;
+            border: none;
+            color: white;
+            font-family: Novecento Sans Web, sans-serif;
+            font-size: 14.4px;
+            font-size: 0.9rem;
+            line-height: 1;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            text-transform: uppercase; }
+            .home .site-content .content-area .site-main .frontpage-shop .frontpage-product-blocks .frontpage-term .category-link a:hover {
+              background: #19625d; }
+          .home .site-content .content-area .site-main .frontpage-shop .frontpage-product-blocks .frontpage-term img {
+            height: 70px;
+            width: 70px; }
+    .home .site-content .content-area .site-main .front-page-journal {
+      width: 1120px;
+      margin-left: auto;
+      margin-right: auto; }
+      .home .site-content .content-area .site-main .front-page-journal h2 {
+        text-align: center; }
+      .home .site-content .content-area .site-main .front-page-journal .frontpage-journal-blocks {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .home .site-content .content-area .site-main .front-page-journal .frontpage-journal-blocks .journal-entry {
+          border: 1px solid #e1e1e1;
+          -ms-flex-preferred-size: 32%;
+              flex-basis: 32%; }
+          .home .site-content .content-area .site-main .front-page-journal .frontpage-journal-blocks .journal-entry .journal-info {
+            padding: 0.75rem; }
+            .home .site-content .content-area .site-main .front-page-journal .frontpage-journal-blocks .journal-entry .journal-info .entry-meta {
+              font-size: 0.75rem; }
+            .home .site-content .content-area .site-main .front-page-journal .frontpage-journal-blocks .journal-entry .journal-info .permalink {
+              font-size: 1.3rem;
+              margin-bottom: 3.75rem; }
+              .home .site-content .content-area .site-main .front-page-journal .frontpage-journal-blocks .journal-entry .journal-info .permalink a {
+                font-family: Novecento Sans Web, sans-serif;
+                font-weight: 700;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: #248a83;
+                text-decoration: none; }
+            .home .site-content .content-area .site-main .front-page-journal .frontpage-journal-blocks .journal-entry .journal-info .read-more {
+              background: #248a83;
+              border: none;
+              color: white;
+              font-family: Novecento Sans Web, sans-serif;
+              font-size: 14.4px;
+              font-size: 0.9rem;
+              line-height: 1;
+              padding: 0.75rem 1.5rem;
+              text-decoration: none;
+              text-transform: uppercase;
+              background: white;
+              color: black;
+              border: 1px black solid; }
+              .home .site-content .content-area .site-main .front-page-journal .frontpage-journal-blocks .journal-entry .journal-info .read-more:hover {
+                background: #248a83;
+                color: white;
+                border: none; }
+          .home .site-content .content-area .site-main .front-page-journal .frontpage-journal-blocks .journal-entry .img-container img {
+            height: 250px;
+            width: 365px; }
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }

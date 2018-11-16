@@ -1,8 +1,15 @@
 .home {
+  .site-header {
+    .main-navigation {
+      position: fixed;
+      color: white;
+    }
+  }
   .site-content {
-    width: 100vw;
+    width: 100%;
     display: flex;
     .content-area {
+      width: 100%;
       .site-main {
         .home-hero {
           align-items: center;
@@ -19,6 +26,9 @@
           height: 100vh;
         }
         .frontpage-shop {
+          width: 1120px;
+          margin-left: auto;
+          margin-right: auto;
           h2 {
             font-size: 2.4rem;
             font-weight: 400;
@@ -33,9 +43,18 @@
             .frontpage-term {
               border: 1px solid #e1e1e1;
               border-top-width: 5px;
-              flex: 0 1 23.5%;
               max-width: 23.5%;
               padding: 0.75rem;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              .category-link a {
+                @include read-more-button;
+                &:hover {
+                  background: #19625d;
+                }
+              }
+
               img {
                 height: 70px;
                 width: 70px;
@@ -44,9 +63,59 @@
           }
         }
         .front-page-journal {
+          width: 1120px;
+          margin-left: auto;
+          margin-right: auto;
+          h2 {
+            text-align: center;
+          }
           .frontpage-journal-blocks {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
+
+            .journal-entry {
+              border: 1px solid #e1e1e1;
+              flex-basis: 32%;
+              .journal-info {
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: space-between;
+                padding: 0.75rem;
+                .entry-meta {
+                  font-size: 0.75rem;
+                }
+                .permalink {
+                  font-size: 1.3rem;
+                  margin-bottom: 3.75rem;
+                  a {
+                    font-family: Novecento Sans Web, sans-serif;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: #248a83;
+                    text-decoration: none;
+                  }
+                }
+                .read-more {
+                  @include read-more-button;
+                  background: white;
+                  color: black;
+                  border: 1px black solid;
+                  &:hover {
+                    background: #248a83;
+                    color: white;
+                    border: none;
+                  }
+                }
+              }
+              .img-container {
+                img {
+                  height: 250px;
+                  width: 365px;
+                }
+              }
+            }
           }
         }
       }

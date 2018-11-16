@@ -24,10 +24,10 @@ function my_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
             background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/logos/inhabitent-logo-text-dark.svg);
-		height:65px;
-		width:320px;
-		background-size: 320px 65px;
-		background-repeat: no-repeat;
+			height:65px;
+			width:320px;
+			background-size: 320px 65px;
+			background-repeat: no-repeat;
         	padding-bottom: 30px;
         }
     </style>
@@ -76,5 +76,43 @@ function inhabitent_dynamic_css(){
 
 add_action('wp_enqueue_scripts','inhabitent_dynamic_css');
 
+
+// modify the product post type archive loop
+function inhabitent_mod_post_type_archive($query){
+    if(
+		(is_post_type_archive(array('product')) ||$query-> is_tax('product_type') )
+		&& !is_admin()
+		&& $query->is_main_query()
+	){
+		$query->set('orderby','title');
+		$query->set('order','ASC');
+		$query->set('posts_per_page',16);
+	}
+}
+
+add_action('pre_get_posts','inhabitent_mod_post_type_archive');
+
+
+
+// filter the product archive title
+function inhabitent_archive_title($title){
+	if(is_post_type_archive('product')){
+		$title = 'Shop Stuff';
+	} elseif (is_tax('product_type')){
+		$title = sprintf('%1$s',single_term_title('',false));
+	}
+	return $title;
+}
+
+add_filter('get_the_archive_title','inhabitent_archive_title');
+
+//replace the excerpt "Read More"
+
+function inhabitent_excerpt_more($more){
+	global $post;
+	return '<a class="read-more" href="' . get_permalink($post->ID) . '">Read More</a>';
+}
+
+add_filter('excerpt_more','inhabitent_excerpt_more');
 
 //
