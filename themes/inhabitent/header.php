@@ -1,10 +1,8 @@
 <?php
 /**
  * The header for our theme.
- *
  * @package RED_Starter_Theme
  */
-
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -25,14 +23,19 @@
 					<h1 class="site-title screen-reader-text">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?>
 						</a>
-					</h1>				
-				</div><!-- .site-branding -->
-
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<?php get_search_form();?>
-				</nav><!-- #site-navigation -->
+					</h1>	
+				</div>	
+				<div id="top-nav" class="top-navigation">
+					<!-- <div class="logo-tent"> -->
+						<a class="logo-link" href="<?php echo get_bloginfo( 'url' ); ?>"rel="home">
+							<img class="logo-img" src ="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent-white.svg'?>">
+						</a>	
+					<!-- </div>						 -->
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						<?php get_search_form();?>
+					</nav>
+				</div>
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

@@ -1,10 +1,4 @@
 .home {
-  .site-header {
-    .main-navigation {
-      position: fixed;
-      color: white;
-    }
-  }
   .site-content {
     width: 100%;
     display: flex;
@@ -73,6 +67,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            margin-bottom: 5%;
 
             .journal-entry {
               border: 1px solid #e1e1e1;

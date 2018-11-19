@@ -1,0 +1,55 @@
+.site-header {
+  background: white;
+  .top-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: cneter;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: -100px;
+    background-color: transparent;
+
+    .logo-link {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      .logo-img {
+        align-self: flex-end;
+        height: 33px;
+        width: 50px;
+      }
+    }
+    .main-navigation {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      .menu-main-container {
+        width: 25%;
+        ul {
+          display: flex;
+          justify-content: space-between;
+          li {
+            margin-right: 2%;
+            a {
+              color: white;
+            }
+          }
+        }
+      }
+      form {
+        fieldset {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.header-below {
+  background-color: #eee;
+  position: fixed;
+}
+
+.nav-color {
+  color: green;
+}

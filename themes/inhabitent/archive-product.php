@@ -14,8 +14,21 @@ get_header(); ?>
 	<header class="page-header">
 		<?php
 		the_archive_title( '<h1 class="page-title">', '</h1>' );
-		the_archive_description( '<div class="taxonomy-description">', '</div>' );
+		// the_archive_description( '<div class="taxonomy-description">', '</div>' );
 		?>
+		    <?php 
+    // Ge the terms for our products and do some cleve stuff with images. 
+    $terms = get_terms(array(
+    'taxonomy'=>'product_type',
+    'hide_emepty' => 0,
+	));?>
+	<?php foreach($terms as $term): ?>
+	<p>
+            <a href="<?php echo get_term_link($term);?>">
+              <?php echo $term->name;?></a>
+          </p>
+	<?php endforeach;?>
+	
 	</header><!-- .page-header -->
 
 	<div class="product-grid">
@@ -41,5 +54,4 @@ get_header(); ?>
 </main><!-- #main -->
 </div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -2,12 +2,24 @@ console.log('hihello');
 
 (function($) {
   $(document).ready(function() {
-    //your code here
-    console.log('wtf');
-    $('body').append('hello');
+    $(function() {
+      $(window).scroll(function() {
+        let heroTop = $('.home-hero').height();
+        if ($(this).scrollTop() >= heroTop) {
+          $('.top-navigation').addClass('header-below');
+          $('.menu-main-container ').addClass('nav-color');
+
+          console.log('white');
+        } else {
+          $('.top-navigation').removeClass('header-below');
+          $('.menu-main-container').removeClass('nav-color');
+          console.log('blk');
+        }
+      });
+    });
 
     //todo add search form toggle script (use focus and blur)
-  });
+  }); //doc-ready
 })(jQuery);
 
 //IIFE
