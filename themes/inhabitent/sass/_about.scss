@@ -1,0 +1,21 @@
+.page-template-about {
+  .site-content {
+    margin-bottom: 5%;
+    .entry-content {
+      color: black;
+      font-family: 'Merriweather-light';
+      font-size: 1rem;
+      line-height: 1.75;
+      h2 {
+        font-family: 'novecento-bold';
+        text-align: center;
+        font-size: 2.1rem;
+      }
+      p {
+        margin-bottom: 1.5rem;
+      }
+      width: 800px;
+      margin: auto;
+    }
+  }
+}

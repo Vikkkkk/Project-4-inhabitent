@@ -1,0 +1,44 @@
+.blog {
+  .site-content {
+    display: flex;
+    margin: auto;
+    width: 1120px;
+    .content-area {
+      border-right: 1px solid #e1e1e1;
+      padding-right: 5%;
+      width: 73%;
+
+      article {
+        .entry-header {
+          position: relative;
+        }
+        .entry-title {
+          background-color: #248a83;
+          color: white;
+          font-size: 2.1rem;
+          left: 0;
+          padding: 0.75rem 1.5rem;
+          position: absolute;
+          margin-top: 2.25rem;
+          max-width: 75%;
+          top: 0;
+        }
+        .entry-meta {
+          background-color: #248a83;
+          bottom: 0;
+          color: white;
+          display: inline-block;
+          font-family: Novecento Sans Web, sans-serif;
+          padding: 1.00005rem 1.5rem;
+          position: absolute;
+          right: 0;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .widget-area {
+      padding-left: 5%;
+      width: 27%;
+    }
+  }
+}
