@@ -7,38 +7,68 @@
       border-right: 1px solid #e1e1e1;
       padding-right: 5%;
       width: 73%;
+      margin-top: 100px;
 
       article {
         .entry-header {
           position: relative;
+          overflow: hidden;
+
+          .entry-title {
+            background-color: #248a83;
+            font-size: 2.1rem;
+            left: 0;
+            padding: 0.75rem 1.5rem;
+            position: absolute;
+            margin-top: 2.25rem;
+            max-width: 75%;
+            top: 0;
+            a {
+              color: white;
+              text-decoration: none;
+            }
+          }
+          .entry-meta {
+            background-color: #248a83;
+            bottom: 7px;
+            color: white;
+            display: inline-block;
+            font-family: Novecento Sans Web, sans-serif;
+            padding: 1.00005rem 1.5rem;
+            position: absolute;
+            right: 0;
+            text-transform: uppercase;
+          }
         }
-        .entry-title {
-          background-color: #248a83;
-          color: white;
-          font-size: 2.1rem;
-          left: 0;
-          padding: 0.75rem 1.5rem;
-          position: absolute;
-          margin-top: 2.25rem;
-          max-width: 75%;
-          top: 0;
-        }
-        .entry-meta {
-          background-color: #248a83;
-          bottom: 0;
-          color: white;
-          display: inline-block;
-          font-family: Novecento Sans Web, sans-serif;
-          padding: 1.00005rem 1.5rem;
-          position: absolute;
-          right: 0;
-          text-transform: uppercase;
+        .entry-content {
+          p {
+            margin-bottom: 1.5rem;
+            color: #404040;
+            font-family: 'Merriweather-light';
+            font-size: 1rem;
+            line-height: 1.75;
+            .read-more {
+              display: block;
+              margin: 1.5rem 0;
+              width: 20%;
+              @include read-more-button;
+              background: white;
+              color: black;
+              border: 1px black solid;
+              &:hover {
+                background: #248a83;
+                color: white;
+                border: none;
+              }
+            }
+          }
         }
       }
     }
     .widget-area {
       padding-left: 5%;
       width: 27%;
+      margin-top: 100px;
     }
   }
 }

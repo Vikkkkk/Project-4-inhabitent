@@ -1,4 +1,27 @@
 .page-template-about {
+  .site-header {
+    .top-navigation {
+    }
+    .header-transparent {
+      background-color: transparent;
+      position: absolute;
+      .logo-green {
+        display: none;
+      }
+      .logo-white {
+        display: block;
+        align-self: flex-end;
+        height: 33px;
+        width: 50px;
+      }
+      a {
+        color: white !important;
+      }
+      i {
+        color: white !important;
+      }
+    }
+  }
   .site-content {
     margin-bottom: 5%;
     .entry-content {

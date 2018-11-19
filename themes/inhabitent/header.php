@@ -28,7 +28,8 @@
 				<div id="top-nav" class="top-navigation">
 					<!-- <div class="logo-tent"> -->
 						<a class="logo-link" href="<?php echo get_bloginfo( 'url' ); ?>"rel="home">
-							<img class="logo-img" src ="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent-white.svg'?>">
+							<img class="logo-white" src ="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent-white.svg'?>">
+							<img class="logo-green" src ="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent.svg'?>">
 						</a>	
 					<!-- </div>						 -->
 					<nav id="site-navigation" class="main-navigation" role="navigation">

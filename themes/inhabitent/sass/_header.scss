@@ -1,18 +1,24 @@
 .site-header {
   background: white;
+
   .top-navigation {
+    z-index: 999;
     display: flex;
     flex-direction: row;
     align-items: cneter;
     justify-content: space-between;
     width: 100%;
-    background-color: transparent;
+    background-color: white;
+    position: fixed;
+    .logo-white {
+      display: none;
+    }
 
     .logo-link {
       display: flex;
       flex-direction: column;
       width: 20%;
-      .logo-img {
+      .logo-green {
         align-self: flex-end;
         height: 33px;
         width: 50px;
@@ -22,7 +28,10 @@
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
+      align-items: center;
+      margin-right: 10%;
       .menu-main-container {
+        margin-right: 3%;
         width: 25%;
         ul {
           display: flex;
@@ -30,25 +39,30 @@
           li {
             margin-right: 2%;
             a {
-              color: white;
+              color: green;
             }
           }
         }
       }
       form {
-        fieldset {
-          border: none;
+        border: none;
+        background: transparent;
+
+        i {
+          color: green;
+        }
+
+        label {
+          .search-field {
+            border: none;
+            background: transparent;
+            width: 0%;
+          }
+          .search-show {
+            width: 80%;
+          }
         }
       }
     }
   }
-}
-
-.header-below {
-  background-color: #eee;
-  position: fixed;
-}
-
-.nav-color {
-  color: green;
 }

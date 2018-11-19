@@ -1,7 +1,25 @@
 .home {
   .site-header {
     .top-navigation {
-      margin-bottom: -100px;
+    }
+    .header-transparent {
+      background-color: transparent;
+      position: absolute;
+      .logo-green {
+        display: none;
+      }
+      .logo-white {
+        display: block;
+        align-self: flex-end;
+        height: 33px;
+        width: 50px;
+      }
+      a {
+        color: white !important;
+      }
+      i {
+        color: white !important;
+      }
     }
   }
   .site-content {

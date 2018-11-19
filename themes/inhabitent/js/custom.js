@@ -3,18 +3,51 @@ console.log('hihello');
 (function($) {
   $(document).ready(function() {
     $(function() {
-      $(window).scroll(function() {
-        let heroTop = $('.home-hero').height();
-        if ($(this).scrollTop() >= heroTop) {
-          $('.top-navigation').addClass('header-below');
-          $('.menu-main-container ').addClass('nav-color');
+      $('.top-navigation').addClass('header-transparent');
 
-          console.log('white');
-        } else {
-          $('.top-navigation').removeClass('header-below');
-          $('.menu-main-container').removeClass('nav-color');
-          console.log('blk');
-        }
+      const $homeHero = $('.home-hero');
+      const $aboutHeader = $('.page-template-about .entry-header');
+
+      if ($homeHero.length) {
+        console.log('Home Hero Exists!');
+        checkScroll($homeHero);
+      }
+
+      if ($aboutHeader.length) {
+        console.log('About Hero Exists!');
+        checkScroll($aboutHeader);
+      }
+
+      /*
+       * Change the nav style on scroll
+       */
+      function checkScroll(headerElement) {
+        $(window).scroll(function() {
+          let heroTop = headerElement.height();
+          console.log(heroTop);
+
+          if ($(this).scrollTop() >= heroTop) {
+            $('.top-navigation').removeClass('header-transparent');
+            // console.log('scrollTop >= heroTop');
+          } else {
+            $('.top-navigation').addClass('header-transparent');
+            // console.log('scrollTop is not >= heroTop');
+          }
+        });
+      }
+
+      /*
+       * Search Toggle
+       */
+
+      $('.toggle-search-icon').on('click', function() {
+        $('.search-field').addClass('search-show');
+        console.log('search toggle clicked');
+      });
+
+      $('.search-field').on('blur', function() {
+        $('.search-field').removeClass('search-show');
+        console.log('blurred');
       });
     });
 
@@ -25,18 +58,3 @@ console.log('hihello');
 //IIFE
 //imediately invoked function expression
 // the last bracket has jquery in it, it just tells the function that hwen it sees $ it means jquery
-
-// ('use strict');
-// !(function(t) {
-//   t(function() {
-//     t('.search-toggle').on('click', function(e) {
-//       e.preventDefault();
-//       var i = t(this).siblings('label');
-//       i.animate({ width: 'toggle' }), i.children('[type="search"]').focus();
-//     }),
-//       t('.search-field').on('blur', function() {
-//         '' === t(this).val() &&
-//           t('.header-search label').animate({ width: 'hide' });
-//       });
-//   });
-// })(jQuery);
