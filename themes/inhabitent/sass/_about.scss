@@ -1,10 +1,14 @@
 .page-template-about {
   .site-header {
+    border-bottom: none;
     .top-navigation {
+      border-bottom: 1px solid #e1e1e1;
     }
     .header-transparent {
       background-color: transparent;
       position: absolute;
+      border-bottom: none;
+
       .logo-green {
         display: none;
       }

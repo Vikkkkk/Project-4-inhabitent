@@ -1,0 +1,49 @@
+.single-product {
+  .site-content {
+    margin: auto;
+    width: 1120px;
+    .content-area {
+      padding-top: 6rem;
+      article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .img-container {
+          width: 48%;
+          img {
+            height: auto;
+            max-width: 100%;
+          }
+        }
+        .content-container {
+          width: 50%;
+
+          .entry-title {
+            color: #d99054;
+            line-height: 1.25;
+            font-size: 2.4rem;
+            margin: 0.67rem 0;
+            margin-bottom: 0.5rem;
+            font-family: 'novecento-bold';
+            letter-spacing: 2px;
+            text-transform: uppercase;
+          }
+          .product-price {
+            font-family: 'novecento';
+            font-size: 1.8rem;
+            margin-top: 0;
+          }
+          .entry-content {
+            p {
+              color: #404040;
+              font-family: 'Merriweather-light';
+              font-size: 1rem;
+              line-height: 1.75;
+              margin-bottom: 1, 5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

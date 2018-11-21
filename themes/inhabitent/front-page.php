@@ -45,7 +45,7 @@ get_header(); ?>
   * Get the blog Journal Entries
   * */
   $args = array(
-  'order' => 'ASC',
+  'order' => 'DSC',
   'posts_per_page' => 3,
   'post_type' => 'post'
     );
@@ -64,6 +64,53 @@ get_header(); ?>
           ?>
         </div>
         <div class="journal-info">
+          <div class="entry-meta">
+          <?php 
+            inhabitent_posted_on();
+            echo '/';
+            comments_number('0 Comments','1 Comment','% Comments');
+          ?>
+          </div>
+          <div class="permalink">
+            <a href="<?php echo get_the_permalink(); ?>">
+            <?php the_title();?>
+            </a>
+          </div>
+          <a class="read-more" href="<?php echo get_the_permalink(); ?>">
+              Read more
+          </a>
+        </div>
+      </article>
+    <?php endforeach; wp_reset_postdata(); ?>
+    </div>
+  </section>
+
+
+  <!-- adventure time! -->
+  <?php
+  /*
+  * Get the adventure entries
+  * */
+  $args = array(
+  'order' => 'ASC',
+  'posts_per_page' => 4,
+  'post_type' => 'adventure'
+    );
+  $adventure_posts = get_posts( $args ); // returns an array of posts
+  ?>
+  <section class="front-page-adventure">
+    <h2>Adventures</h2>
+    <div class="frontpage-adventure-blocks">
+    <?php foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
+      <article class ="adventure-entry">
+        <div class="img-container">
+          <?php  /* Content from your array of post results goes here */ 
+              if(has_post_thumbnail()){
+              the_post_thumbnail('large');
+              } 
+          ?>
+        </div>
+        <div class="adventure-info">
           <div class="entry-meta">
           <?php 
             inhabitent_posted_on();

@@ -14,17 +14,17 @@ get_header(); ?>
 		<header class="page-header">
 			<?php
 				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				$terms = get_terms(array(
-				'taxonomy'=>'product_type',
-				'hide_emepty' => 0,
-				));?>
+				$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );?>
 			<div class="product-type-container">
-			<?php foreach($terms as $term): ?>
+            
+            
+            
 				<p class="product-type">
-					<a href="<?php echo get_term_link($term);?>">
-					<?php echo $term->name;?></a>
-				</p>
-			<?php endforeach;?>
+					
+                <?php echo $term->description;?> 
+                </p>
+                
+		
 			</div>
 		
 		</header><!-- .page-header -->

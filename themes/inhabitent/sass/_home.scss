@@ -1,9 +1,11 @@
 .home {
   .site-header {
     .top-navigation {
+      border-bottom: 1px solid #e1e1e1;
     }
     .header-transparent {
       background-color: transparent;
+      border-bottom: none;
       position: absolute;
       .logo-green {
         display: none;
@@ -85,6 +87,10 @@
           margin-right: auto;
           h2 {
             text-align: center;
+            font-size: 2.4rem;
+            font-weight: 400;
+            margin-bottom: 3.75rem;
+            text-transform: uppercase;
           }
           .frontpage-journal-blocks {
             display: flex;
@@ -104,10 +110,11 @@
                   font-size: 0.75rem;
                 }
                 .permalink {
-                  font-size: 1.3rem;
                   margin-bottom: 3.75rem;
+
                   a {
-                    font-family: Novecento Sans Web, sans-serif;
+                    font-size: 1.3rem;
+                    font-family: 'novecento-bold';
                     font-weight: 700;
                     letter-spacing: 2px;
                     text-transform: uppercase;
