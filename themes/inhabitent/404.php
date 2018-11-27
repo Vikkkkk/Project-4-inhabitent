@@ -12,7 +12,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<section class="error-404 not-found">
+			<section class="container">
 				<header class="page-header">
 					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
 				</header><!-- .page-header -->
@@ -29,13 +29,15 @@ get_header(); ?>
 						<h2 class="widget-title"><?php echo esc_html( 'Most Used Categories' ); ?></h2>
 						<ul>
 						<?php
-							wp_list_categories( array(
+							 wp_list_categories( array(
 								'orderby'    => 'count',
 								'order'      => 'DESC',
 								'show_count' => 1,
 								'title_li'   => '',
 								'number'     => 10,
 							) );
+
+							
 						?>
 						</ul>
 					</div><!-- .widget -->
@@ -51,5 +53,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
