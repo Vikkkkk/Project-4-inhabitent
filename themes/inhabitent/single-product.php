@@ -31,6 +31,20 @@ get_header(); ?>
 					'after'  => '</div>',
 				) );
 			?>
+			<div class="social-links">
+                    <button type="button" class='btn inverse-btn'>
+					<i class="fab fa-facebook-f"></i>
+                        Like
+                    </button>
+                    <button type="button" class='btn inverse-btn'>
+                        <i class='fab fa-twitter'></i>
+                        Tweet
+                    </button>
+                    <button type="button" class='btn inverse-btn'>
+                        <i class='fab fa-pinterest'></i>
+                        Pin
+                    </button>
+				</div>
 		</div><!-- .entry-content -->
 	</div><!-- end of content container -->
 </article><!-- #post-## -->

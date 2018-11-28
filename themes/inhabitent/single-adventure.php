@@ -15,13 +15,13 @@ get_header(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
+			<?php the_post_thumbnail( 'full' ); ?>
 		<?php endif; ?>
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
-			<?php inhabitent_posted_on(); ?> / <?php inhabitent_comment_count(); ?> / <?php inhabitent_posted_by(); ?>
+			<?php  inhabitent_posted_by(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 	<div class="product-price">
@@ -49,6 +49,20 @@ get_header(); ?>
 			
 
 		<?php endwhile; // End of the loop. ?>
+		<div class="social-links">
+                    <button type="button" class='btn inverse-btn'>
+					<i class="fab fa-facebook-f"></i>
+                        Like
+                    </button>
+                    <button type="button" class='btn inverse-btn'>
+                        <i class='fab fa-twitter'></i>
+                        Tweet
+                    </button>
+                    <button type="button" class='btn inverse-btn'>
+                        <i class='fab fa-pinterest'></i>
+                        Pin
+                    </button>
+				</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

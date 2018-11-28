@@ -44,6 +44,23 @@
           }
         }
       }
+      .social-links {
+        margin: 3rem auto;
+        width: 800px;
+
+        button {
+          background-color: transparent;
+          border-radius: 0;
+          border: 1px solid #000;
+          color: #000;
+          font-family: 'novecento';
+          font-size: 0.9rem;
+          line-height: 1;
+          padding: 0.75rem 1.5rem;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
     }
   }
 }

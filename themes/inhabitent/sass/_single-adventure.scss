@@ -1,0 +1,108 @@
+.single-adventure {
+  .site-header {
+    .top-navigation {
+      border-bottom: 1px solid #e1e1e1;
+    }
+    .header-transparent {
+      background-color: transparent;
+      border-bottom: none;
+      position: absolute;
+      .logo-green {
+        display: none;
+      }
+      .logo-white {
+        display: block;
+        align-self: flex-end;
+        height: 33px;
+        width: 50px;
+      }
+      a {
+        color: white !important;
+        text-transform: uppercase;
+        font-family: 'novecento';
+        padding-left: 1.5rem;
+      }
+      i {
+        color: white !important;
+      }
+      ::placeholder {
+        color: white !important;
+      }
+      .search-field {
+        color: white !important;
+      }
+    }
+  }
+
+  .content-area {
+    article {
+      .entry-header {
+        .entry-title {
+          font-family: 'novecento-bold';
+          color: black;
+          font-size: 2.1rem;
+          margin-top: 2.25rem;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          line-height: 1.25;
+          width: 800px;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 2.4rem;
+          margin-bottom: 0.5rem;
+
+          //   text-align: center;
+        }
+        .entry-meta {
+          color: black;
+          font-family: 'novecento';
+          text-transform: uppercase;
+          font-size: 1.2rem;
+          width: 800px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      .entry-content {
+        margin: auto;
+        width: 800px;
+        p {
+          margin-bottom: 1.5rem;
+          color: #404040;
+          font-family: 'Merriweather-light';
+          font-size: 1rem;
+          line-height: 1.75;
+          .read-more {
+            display: none;
+          }
+        }
+      }
+    }
+    .entry-footer {
+      margin: 1.5rem 0;
+      font-family: 'novecento';
+      text-transform: uppercase;
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .social-links {
+      margin: 3rem auto;
+      width: 800px;
+
+      button {
+        background-color: transparent;
+        border-radius: 0;
+        border: 1px solid #000;
+        color: #000;
+        font-family: 'novecento';
+        font-size: 0.9rem;
+        line-height: 1;
+        padding: 0.75rem 1.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

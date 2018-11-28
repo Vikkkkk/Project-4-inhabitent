@@ -7,6 +7,7 @@ console.log('hihello');
 
       const $homeHero = $('.home-hero');
       const $aboutHeader = $('.page-template-about .entry-header');
+      const $adventureHeader = $('.single-adventure .entry-header img');
 
       if ($homeHero.length) {
         console.log('Home Hero Exists!');
@@ -17,6 +18,11 @@ console.log('hihello');
         console.log('About Hero Exists!');
         checkScroll($aboutHeader);
       }
+      if ($adventureHeader.length) {
+        console.log('Adventure Hero Exists!');
+        checkScroll($adventureHeader);
+      }
+
 
       /*
        * Change the nav style on scroll

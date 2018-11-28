@@ -99,7 +99,7 @@ get_header(); ?>
   $adventure_posts = get_posts( $args ); // returns an array of posts
   ?>
   <section class="front-page-adventure">
-    <h2>Adventures</h2>
+    <h2 class="adventure-header">Latest Adventures</h2>
     <div class="frontpage-adventure-blocks">
     <?php foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
       <article class ="adventure-entry">
@@ -111,22 +111,18 @@ get_header(); ?>
           ?>
         </div>
         <div class="adventure-info">
-          <div class="entry-meta">
-          <?php 
-            inhabitent_posted_on();
-            echo '/';
-            comments_number('0 Comments','1 Comment','% Comments');
-          ?>
-          </div>
+          
           <div class="permalink">
             <a href="<?php echo get_the_permalink(); ?>">
             <?php the_title();?>
             </a>
           </div>
+
           <a class="read-more" href="<?php echo get_the_permalink(); ?>">
               Read more
           </a>
         </div>
+        <div class="shadow">.</div>
       </article>
     <?php endforeach; wp_reset_postdata(); ?>
     </div>
