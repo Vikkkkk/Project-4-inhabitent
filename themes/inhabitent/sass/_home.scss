@@ -18,9 +18,18 @@
       }
       a {
         color: white !important;
+        text-transform: uppercase;
+        font-family: 'novecento';
+        padding-left: 1.5rem;
       }
       i {
         color: white !important;
+      }
+      ::placeholder {
+        color: white;
+      }
+      .search-field {
+        color: white;
       }
     }
   }

@@ -14,19 +14,11 @@ get_header(); ?>
 		<header class="page-header">
 			<?php
 				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );?>
-			<div class="product-type-container">
-            
-            
-            
-				<p class="product-type">
-					
+				$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+			?>         
+			<p class="product-type">					
                 <?php echo $term->description;?> 
-                </p>
-                
-		
-			</div>
-		
+            </p>		
 		</header><!-- .page-header -->
 
 		<div class="product-grid">
@@ -44,7 +36,7 @@ get_header(); ?>
 				<div class="product-info">
 					<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 					<!-- <?php the_title('<h3>','</h3>' ); ?> -->
-					<div class="dash-line"></div>			
+					<div class="dash-line">.....</div>			
 					<p class="product-price">
 						$<?php echo CFS()->get('price'); ?>
 					</p><!--end of product-price-->

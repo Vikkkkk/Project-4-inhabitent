@@ -49,19 +49,4 @@
 }
 
 //new added stuff below
-
-.widget-area {
-  padding-left: 5%;
-  width: 27%;
-  .widget_contact {
-    .contact-text {
-      font-family: 'Merriweather-light';
-      a {
-        color: #248a83;
-      }
-    }
-    .widget_title {
-      font-family: 'novecento-bold';
-    }
-  }
-}
+// todo: move all this stuff to the widget scss file

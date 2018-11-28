@@ -20,14 +20,32 @@
       }
       a {
         color: white !important;
+        text-transform: uppercase;
+        font-family: 'novecento';
+        padding-left: 1.5rem;
       }
       i {
         color: white !important;
+      }
+      ::placeholder {
+        color: white;
+      }
+      .search-field {
+        color: white;
       }
     }
   }
   .site-content {
     margin-bottom: 5%;
+    .entry-title {
+      font-family: 'novecento';
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .entry-header {
+      background-size: cover, cover;
+    }
     .entry-content {
       color: black;
       font-family: 'Merriweather-light';
@@ -37,6 +55,8 @@
         font-family: 'novecento-bold';
         text-align: center;
         font-size: 2.1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
       }
       p {
         margin-bottom: 1.5rem;

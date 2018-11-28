@@ -12,7 +12,7 @@
       article {
         .entry-header {
           h1 {
-            font-size: 2rem;
+            font-size: 2.4rem;
             margin: 0.67em 0px;
             font-family: 'novecento-bold';
             letter-spacing: 2px;
@@ -21,7 +21,57 @@
         }
         .entry-content {
           iframe {
-            width: 100%;
+            width: 760px;
+            height: 300px;
+          }
+          h2 {
+            font-size: 2.1rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            font-family: 'novecento-bold';
+          }
+          p {
+            font-size: 1rem;
+            line-height: 1.75;
+            font-family: 'Merriweather-light';
+          }
+          .wpcf7-form {
+            text-transform: uppercase;
+            font-family: 'novecento';
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            p {
+              font-family: 'novecento';
+              margin-bottom: 0.5rem;
+            }
+            input {
+              color: #666;
+              background-color: #f4f4f4;
+              border: 1px solid #e1e1e1;
+              border-radius: 0;
+              padding: 0.3rem;
+            }
+            textarea {
+              color: #666;
+              background-color: #f4f4f4;
+              border: 1px solid #e1e1e1;
+              border-radius: 0;
+              padding: 0.3rem;
+            }
+            .wpcf7-submit {
+              background: #248a83;
+              border: none;
+              color: #fff;
+              font-family: 'novecento';
+              font-size: 0.9rem;
+              line-height: 1;
+              padding: 0.75rem 1.5rem;
+              text-transform: uppercase;
+              &:hover {
+                background: #1d706b;
+                box-shadow: none;
+              }
+            }
           }
         }
       }

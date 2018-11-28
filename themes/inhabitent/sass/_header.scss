@@ -1,5 +1,5 @@
 .site-header {
-  background: white;
+  background: hsla(0, 0%, 100%, 0.85);
 
   .top-navigation {
     z-index: 999;
@@ -8,7 +8,7 @@
     align-items: cneter;
     justify-content: space-between;
     width: 100%;
-    background-color: white;
+    background-color: hsla(0, 0%, 100%, 0.85);
     position: fixed;
     border-bottom: 1px solid #e1e1e1;
     padding: 0.5rem 0;
@@ -34,14 +34,17 @@
       margin-right: 10%;
       .menu-main-container {
         margin-right: 3%;
-        width: 25%;
+        width: 34%;
         ul {
           display: flex;
           justify-content: space-between;
           li {
             margin-right: 2%;
             a {
+              text-transform: uppercase;
               color: green;
+              font-family: 'novecento';
+              padding-left: 1.5rem;
             }
           }
         }
@@ -49,6 +52,9 @@
       form {
         border: none;
         background: transparent;
+        ::placeholder {
+          color: grey;
+        }
 
         i {
           color: green;

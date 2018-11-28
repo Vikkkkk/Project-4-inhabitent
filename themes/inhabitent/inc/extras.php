@@ -61,7 +61,7 @@ function inhabitent_dynamic_css(){
 		}";
 	} else {
 		$hero_css = ".page-template-about .entry-header{		
-			background:linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url({$image});
+			background:linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url({$image})no-repeat center bottom;
 			width:100%;
 			color:white;
 			height:100vh;
