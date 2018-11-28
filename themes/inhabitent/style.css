@@ -1411,6 +1411,14 @@ object {
       line-height: 1.75; }
       .single-post .site-content .content-area article .entry-content p .read-more {
         display: none; }
+    .single-post .site-content .content-area .entry-footer {
+      margin: 1.5rem 0;
+      font-family: 'novecento';
+      text-transform: uppercase; }
+      .single-post .site-content .content-area .entry-footer a {
+        text-decoration: none; }
+      .single-post .site-content .content-area .entry-footer .cat-links {
+        margin-right: 3%; }
     .single-post .site-content .content-area .social-links button {
       background-color: transparent;
       border-radius: 0;
@@ -1422,6 +1430,89 @@ object {
       padding: 0.75rem 1.5rem;
       text-decoration: none;
       text-transform: uppercase; }
+    .single-post .site-content .content-area .comments-area .comments-title {
+      font-size: 2.1rem;
+      font-family: 'novecento-bold';
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+    .single-post .site-content .content-area .comments-area .comment-list {
+      margin-left: 0;
+      padding-left: 0;
+      font-size: 1rem;
+      line-height: 1.75;
+      font-family: 'merriweather-light'; }
+      .single-post .site-content .content-area .comments-area .comment-list li {
+        padding-top: 1.5rem; }
+        .single-post .site-content .content-area .comments-area .comment-list li article {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          padding-bottom: 1.5rem;
+          border-bottom: 1px solid #e1e1e1; }
+          .single-post .site-content .content-area .comments-area .comment-list li article .comment-author-avatar {
+            border-radius: 50%;
+            height: 64px;
+            margin-right: 1.5rem;
+            overflow: hidden;
+            width: 64px; }
+          .single-post .site-content .content-area .comments-area .comment-list li article .fn {
+            font-family: 'Merriweather-bold';
+            text-transform: capitalize; }
+          .single-post .site-content .content-area .comments-area .comment-list li article .comment-metadata {
+            color: grey; }
+    .single-post .site-content .content-area .comments-area .comment-respond .comment-reply-title {
+      font-size: 1.8rem;
+      line-height: 1.25;
+      margin-top: 1.5rem;
+      font-family: 'novecento-bold';
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+    .single-post .site-content .content-area .comments-area .comment-respond form p {
+      font-family: 'Merriweather-light';
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 1.75;
+      margin-bottom: 1.5rem; }
+      .single-post .site-content .content-area .comments-area .comment-respond form p label {
+        display: block;
+        font-family: 'novecento';
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        text-transform: uppercase; }
+      .single-post .site-content .content-area .comments-area .comment-respond form p input,
+      .single-post .site-content .content-area .comments-area .comment-respond form p textarea {
+        width: 100%;
+        color: #666;
+        background-color: #f4f4f4;
+        border: 1px solid #e1e1e1;
+        border-radius: 0;
+        padding: 0.3rem;
+        font-size: 1rem;
+        line-height: 1.75; }
+    .single-post .site-content .content-area .comments-area .comment-respond form .comment-form-author {
+      margin-right: 1%;
+      width: 49%;
+      float: left; }
+    .single-post .site-content .content-area .comments-area .comment-respond form .comment-form-email {
+      margin-left: 1%;
+      width: 49%;
+      float: left; }
+    .single-post .site-content .content-area .comments-area .comment-respond form .form-submit {
+      margin-bottom: 4rem; }
+      .single-post .site-content .content-area .comments-area .comment-respond form .form-submit .submit {
+        background: #248a83;
+        border: none;
+        color: #fff;
+        font-family: 'novecento';
+        font-size: 0.9rem;
+        line-height: 1;
+        padding: 0.75rem 1.5rem;
+        text-transform: uppercase;
+        width: 15%; }
+        .single-post .site-content .content-area .comments-area .comment-respond form .form-submit .submit:hover {
+          background: #1d706b;
+          -webkit-box-shadow: none;
+                  box-shadow: none; }
 
 .single-product .site-content {
   margin: auto;

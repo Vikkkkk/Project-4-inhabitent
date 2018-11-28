@@ -34,6 +34,9 @@ get_header(); ?>
 					<?php the_excerpt(); ?>
 				</div><!-- .entry-content -->
 			</article><!-- #post-## -->
+			<div class="entry-footer">
+				<?php inhabitent_entry_footer();?>
+			</div>
                 
 <!-- todo: add the social media icons shit-->
 				<div class="social-links">
@@ -49,7 +52,8 @@ get_header(); ?>
                         <i class='fab fa-pinterest'></i>
                         Pin
                     </button>
-                </div>
+				</div>
+				
                 <?php
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
@@ -58,9 +62,6 @@ get_header(); ?>
 				?>
 
 			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>

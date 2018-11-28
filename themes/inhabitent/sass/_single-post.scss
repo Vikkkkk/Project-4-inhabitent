@@ -53,6 +53,18 @@
           }
         }
       }
+      .entry-footer {
+        margin: 1.5rem 0;
+        font-family: 'novecento';
+        text-transform: uppercase;
+        a {
+          text-decoration: none;
+        }
+        .cat-links {
+          margin-right: 3%;
+        }
+      }
+
       .social-links {
         // font-size: 0.75rem;
         // line-height: 1;
@@ -70,6 +82,112 @@
           padding: 0.75rem 1.5rem;
           text-decoration: none;
           text-transform: uppercase;
+        }
+      }
+      .comments-area {
+        .comments-title {
+          font-size: 2.1rem;
+          font-family: 'novecento-bold';
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          // margin: 1.5rem 0;
+        }
+        .comment-list {
+          margin-left: 0;
+          padding-left: 0;
+          // margin: 0 0 1.5rem 3rem;
+          font-size: 1rem;
+          line-height: 1.75;
+          font-family: 'merriweather-light';
+          li {
+            padding-top: 1.5rem;
+            article {
+              display: flex;
+              padding-bottom: 1.5rem;
+              border-bottom: 1px solid #e1e1e1;
+              .comment-author-avatar {
+                border-radius: 50%;
+                height: 64px;
+                margin-right: 1.5rem;
+                overflow: hidden;
+                width: 64px;
+              }
+
+              .fn {
+                font-family: 'Merriweather-bold';
+                text-transform: capitalize;
+              }
+              .comment-metadata {
+                color: grey;
+              }
+            }
+          }
+        }
+        .comment-respond {
+          .comment-reply-title {
+            font-size: 1.8rem;
+            line-height: 1.25;
+            margin-top: 1.5rem;
+            font-family: 'novecento-bold';
+            letter-spacing: 2px;
+            text-transform: uppercase;
+          }
+          form {
+            p {
+              font-family: 'Merriweather-light';
+              font-size: 16px;
+              font-size: 1rem;
+              line-height: 1.75;
+              margin-bottom: 1.5rem;
+
+              label {
+                display: block;
+                font-family: 'novecento';
+                font-size: 1.1rem;
+                margin-bottom: 0.5rem;
+                text-transform: uppercase;
+              }
+              input,
+              textarea {
+                width: 100%;
+                color: #666;
+                background-color: #f4f4f4;
+                border: 1px solid #e1e1e1;
+                border-radius: 0;
+                padding: 0.3rem;
+                font-size: 1rem;
+                line-height: 1.75;
+              }
+            }
+            .comment-form-author {
+              margin-right: 1%;
+              width: 49%;
+              float: left;
+            }
+            .comment-form-email {
+              margin-left: 1%;
+              width: 49%;
+              float: left;
+            }
+            .form-submit {
+              margin-bottom: 4rem;
+              .submit {
+                background: #248a83;
+                border: none;
+                color: #fff;
+                font-family: 'novecento';
+                font-size: 0.9rem;
+                line-height: 1;
+                padding: 0.75rem 1.5rem;
+                text-transform: uppercase;
+                width: 15%;
+                &:hover {
+                  background: #1d706b;
+                  box-shadow: none;
+                }
+              }
+            }
+          }
         }
       }
     }
