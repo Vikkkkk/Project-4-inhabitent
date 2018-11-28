@@ -593,7 +593,8 @@ a {
 --------------------------------------------------------------*/
 .widget-area {
   width: 27%;
-  padding: 3rem 0 3rem 5%; }
+  padding: 3rem 0 3rem 5%;
+  margin-top: 49px; }
   .widget-area .widget-title {
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -770,6 +771,8 @@ object {
   .footer-blocks .contact-info {
     padding-right: 1.5rem;
     width: 25%; }
+    .footer-blocks .contact-info i {
+      margin-right: 5px; }
     .footer-blocks .contact-info span {
       font-size: 1.25rem;
       margin-right: 0.5rem; }
@@ -816,13 +819,13 @@ object {
   .home .site-header .header-transparent i {
     color: white !important; }
   .home .site-header .header-transparent ::-webkit-input-placeholder {
-    color: white; }
+    color: white !important; }
   .home .site-header .header-transparent ::-ms-input-placeholder {
-    color: white; }
+    color: white !important; }
   .home .site-header .header-transparent ::placeholder {
-    color: white; }
+    color: white !important; }
   .home .site-header .header-transparent .search-field {
-    color: white; }
+    color: white !important; }
 
 .home .site-content {
   width: 100%;
@@ -832,6 +835,7 @@ object {
   .home .site-content .content-area {
     width: 100%; }
     .home .site-content .content-area .site-main .home-hero {
+      margin-bottom: 4.5rem;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
@@ -852,12 +856,17 @@ object {
     .home .site-content .content-area .site-main .frontpage-shop {
       width: 1120px;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      margin-bottom: 4.5rem; }
       .home .site-content .content-area .site-main .frontpage-shop h2 {
         font-size: 2.4rem;
         font-weight: 400;
         margin-bottom: 3.75rem;
-        text-align: center; }
+        text-align: center;
+        font-family: 'novecento';
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        line-height: 1.25; }
       .home .site-content .content-area .site-main .frontpage-shop .frontpage-product-blocks {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -868,7 +877,8 @@ object {
                 flex-direction: row;
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
-                justify-content: space-between; }
+                justify-content: space-between;
+        margin-bottom: 4.5rem; }
         .home .site-content .content-area .site-main .frontpage-shop .frontpage-product-blocks .frontpage-term {
           border: 1px solid #e1e1e1;
           border-top-width: 5px;
@@ -884,6 +894,13 @@ object {
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center; }
+          .home .site-content .content-area .site-main .frontpage-shop .frontpage-product-blocks .frontpage-term:hover {
+            border-color: #d99054; }
+          .home .site-content .content-area .site-main .frontpage-shop .frontpage-product-blocks .frontpage-term p {
+            font-size: 1rem;
+            line-height: 1.75;
+            font-family: 'Merriweather-light';
+            text-align: center; }
           .home .site-content .content-area .site-main .frontpage-shop .frontpage-product-blocks .frontpage-term .category-link a {
             background: #248a83;
             border: none;
@@ -903,7 +920,8 @@ object {
     .home .site-content .content-area .site-main .front-page-journal {
       width: 1120px;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      margin-bottom: 4.5rem; }
       .home .site-content .content-area .site-main .front-page-journal h2 {
         text-align: center;
         font-size: 2.4rem;
@@ -927,11 +945,20 @@ object {
           -ms-flex-preferred-size: 32%;
               flex-basis: 32%; }
           .home .site-content .content-area .site-main .front-page-journal .frontpage-journal-blocks .journal-entry .journal-info {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             padding: 0.75rem; }
             .home .site-content .content-area .site-main .front-page-journal .frontpage-journal-blocks .journal-entry .journal-info .entry-meta {
-              font-size: 0.75rem; }
+              font-size: 0.75rem;
+              line-height: 1.75;
+              font-family: 'Merriweather-light'; }
             .home .site-content .content-area .site-main .front-page-journal .frontpage-journal-blocks .journal-entry .journal-info .permalink {
-              margin-bottom: 3.75rem; }
+              margin-bottom: 2rem; }
               .home .site-content .content-area .site-main .front-page-journal .frontpage-journal-blocks .journal-entry .journal-info .permalink a {
                 font-size: 1.3rem;
                 font-family: 'novecento-bold';
@@ -939,8 +966,10 @@ object {
                 letter-spacing: 2px;
                 text-transform: uppercase;
                 color: #248a83;
-                text-decoration: none; }
+                text-decoration: none;
+                line-height: 1.25; }
             .home .site-content .content-area .site-main .front-page-journal .frontpage-journal-blocks .journal-entry .journal-info .read-more {
+              width: 42%;
               background: #248a83;
               border: none;
               color: white;
@@ -960,7 +989,8 @@ object {
                 border: none; }
           .home .site-content .content-area .site-main .front-page-journal .frontpage-journal-blocks .journal-entry .img-container img {
             height: 250px;
-            width: 365px; }
+            width: 365px;
+            border-bottom: 5px solid #e1e1e1; }
     .home .site-content .content-area .site-main .frontpage-adventure-blocks {
       width: 1120px;
       margin-left: auto;
@@ -1271,23 +1301,19 @@ object {
             background: #248a83;
             color: white;
             border: none; }
-  .blog .site-content .widget-area {
-    padding-left: 5%;
-    width: 27%;
-    margin-top: 100px; }
 
 .page-id-75 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  width: 1120px;
-  padding-top: 49px; }
+  width: 1120px; }
   .page-id-75 .site-content .content-area {
     border-right: 1px solid #e1e1e1;
     border-top: 1px solid #e1e1e1;
     padding-right: 5%;
-    width: 73%; }
+    width: 73%;
+    padding-top: 49px; }
     .page-id-75 .site-content .content-area article .entry-header h1 {
       font-size: 2.4rem;
       margin: 0.67em 0px;
@@ -1350,29 +1376,30 @@ object {
     border-right: 1px solid #e1e1e1;
     padding-right: 5%;
     width: 73%;
-    margin-top: 49px; }
+    padding-top: 99px; }
     .single-post .site-content .content-area article .entry-header {
       position: relative;
       overflow: hidden; }
       .single-post .site-content .content-area article .entry-header .entry-title {
         background-color: #248a83;
+        font-family: 'novecento-bold';
+        color: #fff;
         font-size: 2.1rem;
         left: 0;
         padding: 0.75rem 1.5rem;
         position: absolute;
         margin-top: 2.25rem;
         max-width: 75%;
-        top: 0; }
-        .single-post .site-content .content-area article .entry-header .entry-title a {
-          color: white;
-          text-decoration: none; }
+        top: 0;
+        text-transform: uppercase;
+        line-height: 1.25; }
       .single-post .site-content .content-area article .entry-header .entry-meta {
         background-color: #248a83;
         bottom: 7px;
         color: white;
         display: inline-block;
-        font-family: Novecento Sans Web, sans-serif;
-        padding: 1.00005rem 1.5rem;
+        font-family: 'novecento';
+        padding: 0.2rem 1.5rem;
         position: absolute;
         right: 0;
         text-transform: uppercase; }
@@ -1383,36 +1410,18 @@ object {
       font-size: 1rem;
       line-height: 1.75; }
       .single-post .site-content .content-area article .entry-content p .read-more {
-        display: block;
-        margin: 1.5rem 0;
-        width: 20%;
-        background: #248a83;
-        border: none;
-        color: white;
-        font-family: Novecento Sans Web, sans-serif;
-        font-size: 14.4px;
-        font-size: 0.9rem;
-        line-height: 1;
-        padding: 0.75rem 1.5rem;
-        text-decoration: none;
-        text-transform: uppercase;
-        background: white;
-        color: black;
-        border: 1px black solid; }
-        .single-post .site-content .content-area article .entry-content p .read-more:hover {
-          background: #248a83;
-          color: white;
-          border: none; }
-    .single-post .site-content .content-area .social-links {
-      font-size: 0.75rem;
-      line-height: 1;
-      padding: 0.6rem 1rem 0.4rem;
+        display: none; }
+    .single-post .site-content .content-area .social-links button {
+      background-color: transparent;
       border-radius: 0;
-      background: none; }
-  .single-post .site-content .widget-area {
-    padding-left: 5%;
-    width: 27%;
-    margin-top: 100px; }
+      border: 1px solid #000;
+      color: #000;
+      font-family: 'novecento';
+      font-size: 0.9rem;
+      line-height: 1;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      text-transform: uppercase; }
 
 .single-product .site-content {
   margin: auto;
@@ -1533,8 +1542,54 @@ object {
   .error404 .site-content .content-area {
     border-right: 1px solid #e1e1e1;
     border-top: 1px solid #e1e1e1;
-    padding-right: 5%;
+    padding: 3rem 5% 3rem 0;
     width: 73%; }
+    .error404 .site-content .content-area .page-title {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.25;
+      font-family: 'novecento-bold';
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+    .error404 .site-content .content-area .page-content {
+      margin: 1.5rem 0 0; }
+      .error404 .site-content .content-area .page-content p {
+        font-family: 'Merriweather-light';
+        font-size: 1rem;
+        line-height: 1.75; }
+      .error404 .site-content .content-area .page-content .search-form {
+        padding-bottom: 0.75rem; }
+        .error404 .site-content .content-area .page-content .search-form i {
+          display: none; }
+        .error404 .site-content .content-area .page-content .search-form input {
+          color: #666;
+          background-color: #f4f4f4;
+          border: 1px solid #e1e1e1;
+          border-radius: 0;
+          font-family: 'Merriweather-light';
+          text-transform: capitalize; }
+      .error404 .site-content .content-area .page-content .widgettitle,
+      .error404 .site-content .content-area .page-content .widget-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.25;
+        font-family: 'novecento-bold';
+        letter-spacing: 2px;
+        text-transform: uppercase; }
+      .error404 .site-content .content-area .page-content .widget_recent_entries,
+      .error404 .site-content .content-area .page-content .widget_categories {
+        margin: 0 0 3rem; }
+        .error404 .site-content .content-area .page-content .widget_recent_entries ul,
+        .error404 .site-content .content-area .page-content .widget_categories ul {
+          list-style: none;
+          margin-left: 0;
+          padding-left: 0; }
+          .error404 .site-content .content-area .page-content .widget_recent_entries ul li a,
+          .error404 .site-content .content-area .page-content .widget_categories ul li a {
+            text-decoration: none;
+            font-size: 1rem;
+            line-height: 1.75;
+            font-family: 'Merriweather-light'; }
 
 .search .site-content {
   display: -webkit-box;
@@ -1546,5 +1601,136 @@ object {
   .search .site-content .content-area {
     border-right: 1px solid #e1e1e1;
     border-top: 1px solid #e1e1e1;
+    width: 73%;
+    padding: 3rem 5% 3rem 0; }
+    .search .site-content .content-area .page-header {
+      border-bottom: 1px solid #e1e1e1;
+      margin-bottom: 3rem;
+      padding-bottom: 1rem; }
+      .search .site-content .content-area .page-header .page-title {
+        font-size: 2.4rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.25;
+        margin-top: 0;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-family: 'novecento-bold'; }
+    .search .site-content .content-area article {
+      margin: 0 0 4.5rem; }
+      .search .site-content .content-area article .entry-title {
+        font-size: 2.1rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.25;
+        font-family: 'novecento-bold';
+        letter-spacing: 2px;
+        text-transform: uppercase; }
+        .search .site-content .content-area article .entry-title a {
+          text-decoration: none; }
+      .search .site-content .content-area article p {
+        font-size: 1rem;
+        line-height: 1.75;
+        font-family: 'Merriweather-light'; }
+      .search .site-content .content-area article .read-more {
+        display: block;
+        margin: 1.5rem 0;
+        width: 20%;
+        background: #248a83;
+        border: none;
+        color: white;
+        font-family: Novecento Sans Web, sans-serif;
+        font-size: 14.4px;
+        font-size: 0.9rem;
+        line-height: 1;
+        padding: 0.75rem 1.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        background: white;
+        color: black;
+        border: 1px black solid; }
+        .search .site-content .content-area article .read-more:hover {
+          background: #248a83;
+          color: white;
+          border: none; }
+
+.category .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 1120px; }
+  .category .site-content .content-area {
+    border-right: 1px solid #e1e1e1;
     padding-right: 5%;
-    width: 73%; }
+    width: 73%;
+    padding-top: 99px; }
+    .category .site-content .content-area .page-header {
+      border-bottom: 1px solid #e1e1e1;
+      margin-bottom: 3rem;
+      padding-bottom: 1rem; }
+      .category .site-content .content-area .page-header .page-title {
+        font-size: 2.4rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.25;
+        margin-top: 0;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-family: 'novecento-bold'; }
+    .category .site-content .content-area article {
+      padding-bottom: 1rem; }
+      .category .site-content .content-area article .entry-header {
+        position: relative;
+        overflow: hidden; }
+        .category .site-content .content-area article .entry-header .entry-title {
+          background-color: #248a83;
+          font-size: 2.1rem;
+          left: 0;
+          padding: 0.75rem 1.5rem;
+          position: absolute;
+          margin-top: 2.25rem;
+          max-width: 75%;
+          top: 0; }
+          .category .site-content .content-area article .entry-header .entry-title a {
+            color: white;
+            text-decoration: none;
+            font-family: 'novecento-bold';
+            text-transform: uppercase;
+            line-height: 1.25; }
+            .category .site-content .content-area article .entry-header .entry-title a:hover {
+              color: #f0e4d1; }
+        .category .site-content .content-area article .entry-header .entry-meta {
+          background-color: #248a83;
+          bottom: 7px;
+          color: white;
+          display: inline-block;
+          font-family: 'novecento';
+          padding: 0.2rem 1.5rem;
+          position: absolute;
+          right: 0;
+          text-transform: uppercase; }
+      .category .site-content .content-area article .entry-content p {
+        margin-bottom: 1.5rem;
+        color: #404040;
+        font-family: 'Merriweather-light';
+        font-size: 1rem;
+        line-height: 1.75; }
+        .category .site-content .content-area article .entry-content p .read-more {
+          display: block;
+          margin: 1.5rem 0;
+          width: 20%;
+          background: #248a83;
+          border: none;
+          color: white;
+          font-family: Novecento Sans Web, sans-serif;
+          font-size: 14.4px;
+          font-size: 0.9rem;
+          line-height: 1;
+          padding: 0.75rem 1.5rem;
+          text-decoration: none;
+          text-transform: uppercase;
+          background: white;
+          color: black;
+          border: 1px black solid; }
+          .category .site-content .content-area article .entry-content p .read-more:hover {
+            background: #248a83;
+            color: white;
+            border: none; }

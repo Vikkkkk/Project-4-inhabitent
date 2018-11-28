@@ -1,4 +1,4 @@
-.single-post {
+.category {
   .site-content {
     display: flex;
     margin: auto;
@@ -8,16 +8,30 @@
       padding-right: 5%;
       width: 73%;
       padding-top: 99px;
+      .page-header {
+        border-bottom: 1px solid #e1e1e1;
+        margin-bottom: 3rem;
+        padding-bottom: 1rem;
+
+        .page-title {
+          font-size: 2.4rem;
+          margin-bottom: 0.5rem;
+          line-height: 1.25;
+          margin-top: 0;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          font-family: 'novecento-bold';
+        }
+      }
 
       article {
+        padding-bottom: 1rem;
         .entry-header {
           position: relative;
           overflow: hidden;
 
           .entry-title {
             background-color: #248a83;
-            font-family: 'novecento-bold';
-            color: #fff;
             font-size: 2.1rem;
             left: 0;
             padding: 0.75rem 1.5rem;
@@ -25,8 +39,17 @@
             margin-top: 2.25rem;
             max-width: 75%;
             top: 0;
-            text-transform: uppercase;
-            line-height: 1.25;
+
+            a {
+              color: white;
+              text-decoration: none;
+              font-family: 'novecento-bold';
+              text-transform: uppercase;
+              line-height: 1.25;
+              &:hover {
+                color: #f0e4d1;
+              }
+            }
           }
           .entry-meta {
             background-color: #248a83;
@@ -48,28 +71,20 @@
             font-size: 1rem;
             line-height: 1.75;
             .read-more {
-              display: none;
+              display: block;
+              margin: 1.5rem 0;
+              width: 20%;
+              @include read-more-button;
+              background: white;
+              color: black;
+              border: 1px black solid;
+              &:hover {
+                background: #248a83;
+                color: white;
+                border: none;
+              }
             }
           }
-        }
-      }
-      .social-links {
-        // font-size: 0.75rem;
-        // line-height: 1;
-        // padding: 0.6rem 1rem 0.4rem;
-        // border-radius: 0;
-        // background: none;
-        button {
-          background-color: transparent;
-          border-radius: 0;
-          border: 1px solid #000;
-          color: #000;
-          font-family: 'novecento';
-          font-size: 0.9rem;
-          line-height: 1;
-          padding: 0.75rem 1.5rem;
-          text-decoration: none;
-          text-transform: uppercase;
         }
       }
     }

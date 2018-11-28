@@ -26,10 +26,10 @@
         color: white !important;
       }
       ::placeholder {
-        color: white;
+        color: white !important;
       }
       .search-field {
-        color: white;
+        color: white !important;
       }
     }
   }
@@ -40,6 +40,7 @@
       width: 100%;
       .site-main {
         .home-hero {
+          margin-bottom: 4.5rem;
           align-items: center;
           background: linear-gradient(
               180deg,
@@ -57,16 +58,22 @@
           width: 1120px;
           margin-left: auto;
           margin-right: auto;
+          margin-bottom: 4.5rem;
           h2 {
             font-size: 2.4rem;
             font-weight: 400;
             margin-bottom: 3.75rem;
             text-align: center;
+            font-family: 'novecento';
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            line-height: 1.25;
           }
           .frontpage-product-blocks {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            margin-bottom: 4.5rem;
 
             .frontpage-term {
               border: 1px solid #e1e1e1;
@@ -76,6 +83,15 @@
               display: flex;
               flex-direction: column;
               align-items: center;
+              &:hover {
+                border-color: #d99054;
+              }
+              p {
+                font-size: 1rem;
+                line-height: 1.75;
+                font-family: 'Merriweather-light';
+                text-align: center;
+              }
               .category-link a {
                 @include read-more-button;
                 &:hover {
@@ -94,6 +110,7 @@
           width: 1120px;
           margin-left: auto;
           margin-right: auto;
+          margin-bottom: 4.5rem;
           h2 {
             text-align: center;
             font-size: 2.4rem;
@@ -111,15 +128,16 @@
               border: 1px solid #e1e1e1;
               flex-basis: 32%;
               .journal-info {
-                // display: flex;
-                // flex-direction: column;
-                // justify-content: space-between;
+                display: flex;
+                flex-direction: column;
                 padding: 0.75rem;
                 .entry-meta {
                   font-size: 0.75rem;
+                  line-height: 1.75;
+                  font-family: 'Merriweather-light';
                 }
                 .permalink {
-                  margin-bottom: 3.75rem;
+                  margin-bottom: 2rem;
 
                   a {
                     font-size: 1.3rem;
@@ -129,9 +147,11 @@
                     text-transform: uppercase;
                     color: #248a83;
                     text-decoration: none;
+                    line-height: 1.25;
                   }
                 }
                 .read-more {
+                  width: 42%;
                   @include read-more-button;
                   background: white;
                   color: black;
@@ -147,6 +167,7 @@
                 img {
                   height: 250px;
                   width: 365px;
+                  border-bottom: 5px solid #e1e1e1;
                 }
               }
             }

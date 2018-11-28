@@ -7,8 +7,56 @@
     .content-area {
       border-right: 1px solid #e1e1e1;
       border-top: 1px solid #e1e1e1;
-      padding-right: 5%;
       width: 73%;
+      padding: 3rem 5% 3rem 0;
+      .page-header {
+        border-bottom: 1px solid #e1e1e1;
+        margin-bottom: 3rem;
+        padding-bottom: 1rem;
+
+        .page-title {
+          font-size: 2.4rem;
+          margin-bottom: 0.5rem;
+          line-height: 1.25;
+          margin-top: 0;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          font-family: 'novecento-bold';
+        }
+      }
+      article {
+        margin: 0 0 4.5rem;
+        .entry-title {
+          font-size: 2.1rem;
+          margin-bottom: 1.5rem;
+          line-height: 1.25;
+          font-family: 'novecento-bold';
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          a {
+            text-decoration: none;
+          }
+        }
+        p {
+          font-size: 1rem;
+          line-height: 1.75;
+          font-family: 'Merriweather-light';
+        }
+        .read-more {
+          display: block;
+          margin: 1.5rem 0;
+          width: 20%;
+          @include read-more-button;
+          background: white;
+          color: black;
+          border: 1px black solid;
+          &:hover {
+            background: #248a83;
+            color: white;
+            border: none;
+          }
+        }
+      }
     }
   }
 }
