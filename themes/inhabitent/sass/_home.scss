@@ -1,38 +1,37 @@
 .home {
-  .site-header {
-    .top-navigation {
-      border-bottom: 1px solid #e1e1e1;
+  .top-navigation {
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .header-transparent {
+    background-color: transparent;
+    border-bottom: none;
+    position: absolute;
+    .logo-green {
+      display: none;
     }
-    .header-transparent {
-      background-color: transparent;
-      border-bottom: none;
-      position: absolute;
-      .logo-green {
-        display: none;
-      }
-      .logo-white {
-        display: block;
-        align-self: flex-end;
-        height: 33px;
-        width: 50px;
-      }
-      a {
-        color: white !important;
-        text-transform: uppercase;
-        font-family: 'novecento';
-        padding-left: 1.5rem;
-      }
-      i {
-        color: white !important;
-      }
-      ::placeholder {
-        color: white !important;
-      }
-      .search-field {
-        color: white !important;
-      }
+    .logo-white {
+      display: block;
+      align-self: flex-end;
+      height: 33px;
+      width: 50px;
+    }
+    a {
+      color: white !important;
+      text-transform: uppercase;
+      font-family: 'novecento';
+      padding-left: 1.5rem;
+    }
+    i {
+      color: white !important;
+    }
+    ::placeholder {
+      color: white !important;
+    }
+    .search-field {
+      color: white !important;
     }
   }
+
   .site-content {
     width: 100%;
     display: flex;
